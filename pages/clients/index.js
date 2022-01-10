@@ -20,7 +20,7 @@ export default function Clients() {
               {/* <p> {client.name} </p> */}
             {/* <Link href="/">   <a>  </a> {client.name}  </Link>   */}
 
-            <Link href="/"><a> {client.name}  </a></Link>
+            <Link href={`/clients/${client.id}`}><a> {client.name}  </a></Link>
             
             </li>
           ))}
