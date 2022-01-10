@@ -11,6 +11,8 @@ export default function ClientProjects() {
 
     function loadProjectHandler(){
       console.log(' clicked -  loadProjectHandler');
+      // load data .... 
+      router.push('/clients/max/projecta');
     }
 
   return (
