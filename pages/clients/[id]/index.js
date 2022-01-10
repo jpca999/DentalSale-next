@@ -13,6 +13,11 @@ export default function ClientProjects() {
       console.log(' clicked -  loadProjectHandler');
       // load data .... 
       router.push('/clients/max/projecta');
+
+      // router.push({
+      //   pathname: '/clients/[id]/[client]',
+      //   query: {id: 'passsing value', moreValue: 'here'},
+      // })
     }
 
   return (
