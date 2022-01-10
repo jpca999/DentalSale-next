@@ -13,7 +13,7 @@ export default function SinglePortfolioPage() {
 
   return (
     <div className={styles.container}>
-      <h1> Single  Portfolio Page </h1>
+      <h1> Single  Portfolio Page  {router.query.id} </h1>
 
     </div>
   )
