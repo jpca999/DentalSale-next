@@ -8,8 +8,8 @@ import { useRouter, withRouter } from 'next/router';
 export default function BlogPostsPage() {
     const router = useRouter ();
 
-    console.log('11- router =', router );
-    console.log('11- router query =', router.query  );
+    console.log('11  slug- router =', router );
+    console.log('11 slug- router query =', router.query  );
 
   return (
     <div className={styles.container}>
