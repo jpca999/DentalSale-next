@@ -2,21 +2,16 @@ import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { getFeaturedEvents } from './dummyData'; 
+import { Fragment } from 'react'
+import Hero from '../components/home-page/Hero'
 
 export default function Home() {
 
-  const FeaturedEvents = getFeaturedEvents(); 
 
   return (
-    <div className={styles.container}>
-      <h1> Hello Dental Sale </h1>
+     <Fragment>
+       <Hero />
+     </Fragment>
 
-      <ul>
-       
-      </ul>
-
-
-    </div>
   )
 }
