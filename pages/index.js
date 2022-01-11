@@ -6,11 +6,11 @@ import Hero from '../components/home-page/hero';
 // import { getFeaturedPosts } from '../lib/posts-util';
 
 const DUMMY_POSTS = [
-  {slug: 'getting-started', title: 'the title', image: 'getting-started-nextjs.png', excerpt:'234', date: ' 2022-02-10' },
-  {slug: 'getting-started', title: 'the title 2', image: 'getting-started-nextjs.png', excerpt:'234', date: ' 2022-02-10' },
-  {slug: 'getting-started', title: 'the title 3', image: 'getting-started-nextjs.png', excerpt:'234', date: ' 2022-02-10' },
-  {slug: 'getting-started', title: 'the title 4', image: 'getting-started-nextjs.png', excerpt:'234', date: ' 2022-02-10' },
-  {slug: 'getting-started', title: 'the title', image: 'getting-started-nextjs.png', excerpt:'234', date: ' 2022-02-10' }
+  {slug: 'next', title: 'the title', image: 'nextjs.png', excerpt:'234 first block', date: ' 2022-02-10' },
+  // {slug: 'getting-started-nextjs2', title: 'the title 2', image: 'getting-started-nextjs.png', excerpt:'234', date: ' 2022-02-10' },
+  // {slug: 'getting-started-nextjs3', title: 'the title 3', image: 'getting-started-nextjs.png', excerpt:'234', date: ' 2022-02-10' },
+  // {slug: 'getting-started-nextjs4', title: 'the title 4', image: 'getting-started-nextjs.png', excerpt:'234', date: ' 2022-02-10' },
+  // {slug: 'getting-started-nextjs5', title: 'the title', image: 'getting-started-nextjs.png', excerpt:'234', date: ' 2022-02-10' }
 ];
 
 function HomePage(props) {
