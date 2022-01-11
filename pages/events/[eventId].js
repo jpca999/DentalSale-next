@@ -12,7 +12,7 @@ export default function EventDetailPage () {
 
   return (
     <div className={styles.container}>
-      <h1>  EventDetailPage  project of a selected client  {router.query.id} </h1>
+      <h1>  Event Detail Page  project of a selected client  {router.query.id} </h1>
 
      
       
