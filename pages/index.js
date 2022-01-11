@@ -7,10 +7,10 @@ import Hero from '../components/home-page/hero';
 
 const DUMMY_POSTS = [
   { slug: 'next', title: 'the title', image: 'nextjs.png', excerpt:'234 first block', date: ' 2022-02-10' },
+  { slug: 'next2', title: 'the title', image: 'nextjs.png', excerpt:'234 first block', date: ' 2022-02-10' },
+  { slug: 'next3', title: 'the title', image: 'nextjs.png', excerpt:'234 first block', date: ' 2022-02-10' },
   { slug: 'next', title: 'the title', image: 'nextjs.png', excerpt:'234 first block', date: ' 2022-02-10' },
-  { slug: 'next', title: 'the title', image: 'nextjs.png', excerpt:'234 first block', date: ' 2022-02-10' },
-  { slug: 'next', title: 'the title', image: 'nextjs.png', excerpt:'234 first block', date: ' 2022-02-10' },
-  { slug: 'next', title: 'the title', image: 'nextjs.png', excerpt:'234 first block', date: ' 2022-02-10' }
+  { slug: 'next5', title: 'the title', image: 'nextjs.png', excerpt:'234 first block', date: ' 2022-02-10' }
 ];
 
 function HomePage(props) {
