@@ -8,7 +8,7 @@ function AllPosts(props) {
   return (
     <section className={classes.posts}>
       <h1>All Posts - new comp</h1>
-      {/* <PostsGrid posts={props.posts} /> */}
+      <PostsGrid posts={props.posts} />
     </section>
   );
 }
