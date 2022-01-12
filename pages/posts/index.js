@@ -1,23 +1,32 @@
-import Link from 'next/link'
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from 'next/head';
 import { Fragment } from 'react';
+
 import AllPosts from '../../components/posts/all-posts';
-import styles from '../../styles/Home.module.css'
+import { getAllPosts } from '../../lib/posts-util';
 
-const DUMMY_POSTS = [
-  { slug: 'next', title: 'the title', image: 'nextjs.png', excerpt:'234 first block', date: ' 2022-02-10' },
-  { slug: 'next2', title: 'the title', image: 'nextjs.png', excerpt:'234 first block', date: ' 2022-02-10' },
-  { slug: 'next3', title: 'the title', image: 'nextjs.png', excerpt:'234 first block', date: ' 2022-02-10' },
-  { slug: 'next', title: 'the title', image: 'nextjs.png', excerpt:'234 first block', date: ' 2022-02-10' },
-  { slug: 'next5', title: 'the title', image: 'nextjs.png', excerpt:'234 first block', date: ' 2022-02-10' }
-];
-
-
-export default function AllPostsPage() {
-  
-  return (<Fragment>
-        <AllPosts posts={DUMMY_POSTS} />
-  </Fragment>
+function AllPostsPage(props) {
+  return (
+    <Fragment>
+      <Head>
+        <title>All Posts</title>
+        <meta
+          name='description'
+          content='A list of all programming-related tutorials and posts!'
+        />
+      </Head>
+      <AllPosts posts={props.posts} />
+    </Fragment>
   );
 }
+
+export function getStaticProps() {
+  const allPosts = getAllPosts();
+
+  return {
+    props: {
+      posts: allPosts,
+    },
+  };
+}
+
+export default AllPostsPage;

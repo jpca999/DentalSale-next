@@ -1,22 +1,18 @@
-import Link from 'next/link'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-// import { getFeaturedEvents } from './dummyData'; 
+import { Fragment } from 'react';
+import Head from 'next/head';
 
-export default function Home() {
+import ContactForm from '../components/contact/contact-form';
 
-  // const FeaturedEvents = getFeaturedEvents(); 
-
+function ContactPage() {
   return (
-    <div className={styles.container}>
-      <h1> Contact Page </h1>
-
-      <ul>
-       
-      </ul>
-
-
-    </div>
-  )
+    <Fragment>
+      <Head>
+        <title>Contact Me</title>
+        <meta name='description' content='Send me your messages!' />
+      </Head>
+      <ContactForm />
+    </Fragment>
+  );
 }
+
+export default ContactPage;
