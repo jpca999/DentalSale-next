@@ -1,36 +1,23 @@
 import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
+import { Fragment } from 'react';
+import AllPosts from '../../components/posts/all-posts';
 import styles from '../../styles/Home.module.css'
 
-export default function AllPosts() {
+const DUMMY_POSTS = [
+  { slug: 'next', title: 'the title', image: 'nextjs.png', excerpt:'234 first block', date: ' 2022-02-10' },
+  { slug: 'next2', title: 'the title', image: 'nextjs.png', excerpt:'234 first block', date: ' 2022-02-10' },
+  { slug: 'next3', title: 'the title', image: 'nextjs.png', excerpt:'234 first block', date: ' 2022-02-10' },
+  { slug: 'next', title: 'the title', image: 'nextjs.png', excerpt:'234 first block', date: ' 2022-02-10' },
+  { slug: 'next5', title: 'the title', image: 'nextjs.png', excerpt:'234 first block', date: ' 2022-02-10' }
+];
 
-  const events = [
-    {id: "max", name: "Event 1"}, 
-    {id: "Amanda", name: "Event 2"}, 
-    {id: "Romeo", name: "Event 3"}
-  ];
 
-  return (
-    <div className={styles.container}>
-      <h1> All Events </h1>
-      <ul>
-        {events.map( (client) => (
-            <li key={client.id}> 
-
-            <Link href={{
-              pathname: '/events/[id]',
-              query: {id: client.id},
-
-            }}><a> {client.name}  </a></Link>
-            
-            </li>
-          ))}
-      </ul>
-      <hr/>
-      <Link href="/clients/Max"> Event 1  </Link>
-      <Link href="/Romeo"> Event 2  </Link>
-      <Link href="/Amanda"> Event 3  </Link>
-    </div>
-  )
+export default function AllPostsPage() {
+  
+  return (<Fragment>
+        <AllPosts posts={DUMMY_POSTS} />
+  </Fragment>
+  );
 }
